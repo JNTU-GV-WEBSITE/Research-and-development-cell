@@ -1,0 +1,10 @@
+/* Add this CSS to your existing styles or App.css file */
+.header__middle__menus nav ul.main-menu li.menu-item a {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  /* Adjust the font size for sub-menu items */
+  .header__middle__menus nav ul.main-menu li.sub__menus__arrows ul.sub__menus li a {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+  
