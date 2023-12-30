@@ -9,6 +9,7 @@ import Offline from "./components/Offline";
 import Contact from "./components/Contact";
 
 import Navbarmenu from "./components/menu/Navbarmenu";
+import MyComponent from "./components/menu/MyComponent";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router basename="/">
         {/* Add Menu Component */}
         <Navbarmenu />
+        <MyComponent/>
         <Routes>
           {/* <Switch>  */}
           <Route exact path="/" component={Home} />
