@@ -1,124 +1,72 @@
 export const Administration_Wing = [
   {
-    title: "Chancellor",
-    link: "/administration/chancellor",
+    title: "JNTU-GV, DWARAPUDI, VIZIANAGARAM, Andhra Pradesh, INDIA,  535 003 " ,
+    
+  },
+   {
+    title: "Phone : 08922277388 " ,
+    
   },
   {
-    title: "Vice Chancellor",
-    link: "/administration/vice-chancellor",
-  },
-  {
-    title: "Registrar",
-    link: "/administration/registrar",
-  },
-  {
-    title: "Program Offered",
-    link: "/academics/programs-offered",
-  },
-
-  {
-    title: "Affliated Colleges",
-    link: "/academics/affliated-colleges",
+    title: "Email : drnd@jntuk.edu.in" ,
+    
   },
 ];
 
 export const Central_Facilites = [
   {
-    title: "Dr.YSR Central Library",
+    title: "Home",
     link: "/",
   },
 
   {
-    title: "Training & Placement",
+    title: "About Us",
     link: "/",
   },
 
   {
-    title: "National Service Scheme (NSS)",
+    title: "Administration",
     link: "/",
   },
   {
-    title: "Anti Ragging Committee",
+    title: "Ph.D List",
+    link: "/",
+  },
+  {
+    title: "Contact",
     link: "/",
   },
 ];
 
-export const Online_Courses = [
-  {
-    title: "Swayam Central",
-    link: "/",
-  },
-  {
-    title: "UGC MOOCs: A Vertical of SWAYAM",
-    link: "/",
-  },
-
-  {
-    title: "Dr.YSR Central Library",
-    link: "/",
-  },
-];
 
 export const Constituent_Colleges = [
   {
-    title: "JNTU-GV College of Engineering, Vizianagaram",
-    link: "https://jntugvcev.edu.in/",
+    title: "Notifications",
+    link: "/",
   },
   {
-    title:"JNTU-GV Tribal College of Engineering, Kurupam",
-    link:"http://jntugvk.ucev.in/"
-  }
+    title: "Online Payments",
+    link: "/",
+  },
+
+  {
+    title: "University",
+    link: "/",
+  },
+  {
+    title: "Others",
+    link: "/",
+  },
 ];
 
-export const University_Hostels = [
-  {
-    title: "Gostani",
-    link: "/",
-  },
-  {
-    title: "Vegavathi",
-    link: "/",
-  },
-  {
-    title: "nagavalli",
-    link: "/",
-  },
-  {
-    title: "vamsadhara",
-    link: "/",
-  },
-];
+
 
 export const JntuGv_Units = [
   {
-    title: "DMC",
+    title: "Tamen quem nulla quae legam multos aute sint culpa legam noster magna",
     link: "/",
   },
-  {
-    title: "IQAC",
-    link: "/",
-  },
-  {
-    title: "Sports",
-    link: "/",
-  },
-  {
-    title: "Library",
-    link: "/",
-  },
-  {
-    title: "Incubation Center",
-    link: "/",
-  },
-];
-
-export const Grievance = [
-  {
-      title: "Student Grievance",
-      link:"/grievance-form"
-  },
-  {
-    title: "Recruitment Grievance",
-    link:"mailto:recruitmentgrievances@jntugv.edu.in"
-},
+  
+  
 ]
+
