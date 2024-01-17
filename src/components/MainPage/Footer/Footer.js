@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 import {
   Administration_Wing,
   Central_Facilites,
-  Online_Courses,
-  University_Hostels,
   Constituent_Colleges,
   JntuGv_Units,
-  Grievance,
 } from "./FooterData.js";
 import {
   FaFacebook,
@@ -32,7 +29,7 @@ function Footer() {
       <div className="subcontainer2Footer">
         {/* Administration_Wing */}
         <div className="container1Footer">
-          <p className="subheadingFooter">Administration Wing</p>
+          <p className="subheadingFooter">JNTU-GV</p>
           <hr className="subFooter" />
           <div>
             {Administration_Wing.map((item, index) => (
@@ -42,28 +39,17 @@ function Footer() {
                     {item.title}
                   </Link>
                 </p>
+                
               </div>
             ))}
-          </div>
-          <p className="subheadingFooter">Grievances</p>
-          <hr className="subFooter" />
-          <div>
-            {Grievance.map((item, index) => (
-              <div key={index}>
-                <p>
-                  <Link to={item.link} className="sublinksFooter">
-                    {item.title}
-                  </Link>
-                </p>
-              </div>
-            ))}
+          
           </div>
         </div>
 
         {/* Central_Facilites */}
 
         <div className="container2Footer">
-          <p className="subheadingFooter">Central Facilities</p>
+          <p className="subheadingFooter">Useful Links</p>
           <hr className="subFooter" />
           <div>
             {Central_Facilites.map((item, index) => (
@@ -75,26 +61,14 @@ function Footer() {
                 </p>
               </div>
             ))}
-          </div>
-          <p className="subheadingFooter">Online Courses</p>
-          <hr className="subFooter" />
-          <div>
-            {Online_Courses.map((item, index) => (
-              <div key={index}>
-                <p>
-                  <Link to={item.link} className="sublinksFooter">
-                    {item.title}
-                  </Link>
-                </p>
-              </div>
-            ))}
+          
           </div>
         </div>
 
         {/* Online_Courses */}
         <div className="container3Footer">
           {/* Consituent Colleges */}
-          <p className="subheadingFooter">Constituent Colleges</p>
+          <p className="subheadingFooter">Our Services</p>
           <hr className="subFooter" />
           <div>
             {Constituent_Colleges.map((item, index) => (
@@ -111,26 +85,13 @@ function Footer() {
                 </p>
               </div>
             ))}
-          </div>
-          {/* University_Hostels */}
-          <p className="subheadingFooter">University Hostels</p>
-          <hr className="subFooter" />
-          <div>
-            {University_Hostels.map((item, index) => (
-              <div key={index}>
-                <p>
-                  <Link to={item.link} className="sublinksFooter">
-                    {item.title}
-                  </Link>
-                </p>
-              </div>
-            ))}
+          
           </div>
         </div>
 
         <div className="container4Footer">
           {/* JNTU GV UNITS */}
-          <p className="subheadingFooter">JNTU-GV Units</p>
+          <p className="subheadingFooter">Our Newsletter</p>
           <hr className="subFooter" />
           <div>
             {JntuGv_Units.map((item, index) => (
@@ -165,13 +126,8 @@ function Footer() {
       <hr className="footerHr" />
       <div className="subcontainer3Footer">
         {/* Contact Us */}
-        <p className="subheadingFooter">Contact Us :</p>
-        <p>
-          JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY-GURAJADA
-          VIZIANAGARAM,DWARAPUDI, VIZIANAGARAM, ANDHRA PRADESH - 535 003, Andhra
-          Pradesh, INDIA.
-        </p>
-        <br></br>
+        <p className="subheadingFooter">Contact Us </p>
+       
       </div>
       <div className="BelowBar">
           <div className="BelowBar-links">
@@ -216,13 +172,13 @@ function Footer() {
             >
               <FaYoutube />
             </a>
+            
           </div>
         </div>
+       
 
       {/* Copyright  */}
-      <div className="mobilefooter">
-        <p>© Copyright 2023 JNTU-GV Vizianagaram. All Rights Reserved.</p>
-      </div>
+      
     </div>
   );
 }
