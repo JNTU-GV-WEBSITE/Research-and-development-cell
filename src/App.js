@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
 import Homepage from "./Homepage";
+import Marquee from "./components/Marquee";
 // import BelowBar from "./components/BelowBar/BelowBar";
-import Header from "./components/MainPage/Header/Header";
 
+import Header from "./components/MainPage/Header/Header";
 import AboutJNTUGV from "./components/MainPage/Header/Aboutus/AboutJNTUGV/AboutJNTUGV";
 import Vision from "./components/MainPage/Header/Aboutus/Vision/Vision";
 import Mission from "./components/MainPage/Header/Aboutus/Mission/Mission";
@@ -50,7 +51,7 @@ import R20 from "./components/MainPage/Results/r20";
 import R16 from "./components/MainPage/Results/r16";
 import R19 from "./components/MainPage/Results/r19";
 import Chairpersons from "./components/MainPage/Header/Administration/Chairpersons/Chairpersons";
-import NewsAndEvents from "./components/NewsAndEvents/NewsAndEvents";
+
 import CompleteGallery from "./components/Gallery/CompleteGallery";
 import Syllabus from "./components/MainPage/Header/Academics/Syllabus/Syllabus";
 
@@ -59,6 +60,7 @@ function App() {
   return (
     <div>
       {/* <BelowBar /> */}
+      <Marquee />
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -124,7 +126,6 @@ function App() {
         </Route>
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/grievance-form" element={<Grievance />} />
-        <Route path="/news-and-events" element={<NewsAndEvents/>} />
         <Route path="/gallery" element={<CompleteGallery />} />
 
       </Routes>
