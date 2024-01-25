@@ -1,62 +1,30 @@
-import React, { useState } from "react";
-import "./Gallery.css";
-import { CG } from "./CG"; // Import the array of image objects from CG.js
+import React from 'react';
+import './Gallery.css';
+import RD from "../../assets/R&D/RD.png";
+import RD1 from "../../assets/R&D/RD1.png";
+import RD2 from "../../assets/R&D/RD2.png";
 
-function Gallery() {
-  const recentImages = CG.slice(-15); // Get the last 10 images from CG.js
-
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const duplicatedImages = [
-    ...recentImages,
-    ...recentImages,
-    ...recentImages,
-    ...recentImages,
+const Gallery = () => {
+ 
+  const images = [
+    RD,
+    RD1,
+    RD2,
+    // Add more image URLs as needed
   ];
 
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
-  };
-
-  const handleClose = () => {
-    setSelectedImage(null);
-  };
 
   return (
     <div className="gallery-container">
-      <h1 className="gallery-heading">GALLERY</h1>
-      <div className="image-gallery">
-        <div className="image-scroll">
-          {duplicatedImages.map((image, index) => (
-            <img
-              key={index}
-              src={image.image}
-              alt={`JNTUGV ${image.description}`}
-              onClick={() => handleImageClick(image)}
-            />
-          ))}
-        </div>
+      <h1>GALLERY</h1>
+      <div className={`image-scroll`}>
+        {images.map((image, index) => (
+          <img key={index} src={image} alt={`${index + 1}`} />
+        ))}
       </div>
-
-      {selectedImage && (
-        <div className="enlarged-image">
-          <img src={selectedImage.image} alt={`JNTUGV`} />
-          <button onClick={handleClose}>Back</button>
-        </div>
-      )}
-
-      {/* Hyperlink at the bottom right corner */}
-      <a
-        href="/gallery" // Replace with your desired link
-        rel="noopener noreferrer"
-        style={{
-          color: "#ffffff", // White text color
-        }}
-      >
-        Show All
-      </a>
+      
     </div>
   );
-}
+};
 
 export default Gallery;
