@@ -24,7 +24,7 @@ const Marquee = () => {
           </div>
           <div className="col-xs-20 col-sm-1">
             <i className="bi bi-envelope d-flex align-items-right">
-              <a href="mailto:contact@example.com" class="marquee-email">drnd@jntugv.edu.in</a>
+              <a href="mailto:contact@example.com" class="marquee-email">da@jntugv.edu.in</a>
             </i>
           </div>
         </div>

@@ -1,18 +1,15 @@
-// Gallery.js
-
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './Gallery.css';
-import Image from "../../assets/R&D/Image.png";
-import pic from "../../assets/R&D/pic.png";
-import pic1 from "../../assets/R&D/pic1.png";
+import RD from "../../assets/R&D/RD.png";
+import RD1 from "../../assets/R&D/RD1.png";
+import RD2 from "../../assets/R&D/RD2.png";
 
 const Gallery = () => {
  
   const images = [
-    Image,
-    pic,
-    pic1,
+    RD,
+    RD1,
+    RD2,
     // Add more image URLs as needed
   ];
 
@@ -22,7 +19,7 @@ const Gallery = () => {
       <h1>GALLERY</h1>
       <div className={`image-scroll`}>
         {images.map((image, index) => (
-          <img key={index} src={image} alt={`Image ${index + 1}`} />
+          <img key={index} src={image} alt={`${index + 1}`} />
         ))}
       </div>
       

@@ -2,12 +2,12 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./RDImageGallery.css";
-import Image from "../../assets/R&D/Image.png";
-import pic from "../../assets/R&D/pic.png";
+import RD from "../../assets/R&D/RD.png";
+import RD1 from "../../assets/R&D/RD1.png";
 
 const images = [
-  Image,
-  pic
+  RD,
+  RD1
 ];
 
 function RDImageGallery() {

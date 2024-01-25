@@ -7,7 +7,7 @@ const LatestNews = () => {
   
 
   const [showAll, setShowAll] = useState(false);
-  const [notifications, setNotifications] = useState(Data);
+  const [notifications] = useState(Data);
 
   const handleShowAll = () => {
     setShowAll(true);
@@ -24,10 +24,6 @@ const LatestNews = () => {
         {notifications.map((notification, index) => {
           // Display all notifications when showAll is true, otherwise display the first two
           if (showAll || index < 2) {
-            const dateObj = new Date(notification.date);
-            const day = dateObj.getDate();
-            const month = dateObj.toLocaleString('default', { month: 'long' });
-            const year = dateObj.getFullYear();
 
             return (
               <div className="updateBox">
