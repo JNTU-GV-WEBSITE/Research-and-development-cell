@@ -45,22 +45,23 @@ const Dropdown = () => {
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
               {" "}
-              <Link className="link-btn" to="/about-us/about-jntugv">
-                About JNTU-GV
+              <Link className="link-btn" to="/about-us/aboutR&DCell">
+                About R & D Cell
               </Link>
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/about-us/vision">
-                Vision
+              <Link className="link-btn" to="/about-us/VisionMission">
+                Vision & Mission
               </Link>
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/about-us/mission">
-                Mission
+              <Link className="link-btn" to="/about-us/researchpolicy">
+                Research Policy
               </Link>
             </button>
+           
           </div>
         </div>
         <div class="dropdown">

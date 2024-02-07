@@ -1,0 +1,43 @@
+import React from "react";
+import Typography from "@mui/material/Typography";
+import "../Aboutus.css";
+function AboutRandDCell() {
+  return (
+    <div className="ABOUTmainContainer">
+      {/* Blue box with organization structure heading */}
+      <div className="AboutusBox">
+        <Typography variant="h4" className="AboutusHeading">
+          ABOUT R & D CELL
+        </Typography>
+        {/* Add your organization structure content here */}
+      </div>
+
+      <div className="allRightContent">
+        <div className="allRightContentProfile">
+          <div className="imageContainer">
+            {/* Image on the left side */}
+            <img
+              src="https://globalsmtasia.com/wp-content/uploads/2017/05/China-XD-sees-global-RD-as-key-to-diversifying.png"
+              alt="JNTUGV Logo"
+              className="imageLeft"
+              style={{  maxWidth: "300px", margin: "0 20px 20px 0" }}
+            />
+          </div>
+
+          <div className="textContainer">
+            {/* Information on the right side */}
+            <Typography>
+            Jawaharlal Nehru Technological University-Gurajada Vizianagaram (JNTU-GV) is focusing on research programmes on need-based technology and solutions for societal problems. Accordingly, an independent Research and Development Cell was established in the year 2005 to promote and monitor the research programmes offered in the University. The R & D Cell administers Ph.D. programme in external and full-time modes.
+            </Typography>
+            <br />
+            <Typography>
+              Research and Development Cell coordinates with the Directorate of Admissions for selection and admission of research scholars, and also interacts with Director of Evaluation for evaluation of Thesis. Further, R&D Cell interacts with the Constituent Units of University for academic activities of research and also with Directorate of University Foreign Relations (DUFR) for the admission of foreign national students. R&D Cell conducts Research Review Meetings (RRMs) once in every six months to evaluate and monitor the research work progress of the scholars. R&D Cell conducts viva-voce examinations for the award of the Ph.D. degree in the Faculties of Engineering, Science & Technology, Pharmacy, Management, Humanities and Social Sciences.
+            </Typography>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AboutRandDCell;

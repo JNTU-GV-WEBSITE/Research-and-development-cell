@@ -45,9 +45,15 @@
   font-weight: bold;
 }
 
+.ABOUTmainContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 
-/* .ABOUTmainContainer {
+
+ /* .ABOUTmainContainer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -57,7 +63,7 @@
     align-items: flex-start;
   }
   
-  .ABOUTallLeftMenu{
+ .ABOUTallLeftMenu{
     margin-top: 10px;
     margin-right: 60px;
   }
@@ -120,3 +126,116 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.AboutusBox {
+  background-color: #5900ff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Make the box take up 100% of the width */
+  box-sizing: border-box; /* Include padding and border in the box's total width */
+}
+
+
+.AboutusHeading {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+/* Flexbox layout for the main container */
+.ABOUT-Main {
+  display: flex;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+/* Styling for the left menu */
+.ABOUTallLeftMenu {
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
+/* Styling for the menu buttons */
+.ABOUTallLeftMenu .menubutton {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  width: 300px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-left: 13%;
+}
+
+/* Hover state for menu buttons */
+.ABOUTallLeftMenu .menubutton:hover {
+  background-color: #2e0669;
+}
+
+/* Selected state for menu buttons */
+.ABOUTallLeftMenu .menubutton.active {
+  background-color: #2e0669;
+}
+
+/* Styling for links inside the left menu */
+.ABOUTallLeftMenu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling for the about us box */
+/* . {
+  background-color: #5900ff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+} */
+
+/* Styling for the heading inside the about us box */
+.AboutusHeading {
+  color: white;
+  text-align: center;
+}
+
+
+/* */
+.allRightContentProfile {
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  flex: 0 0 auto;
+}
+
+.textContainer {
+  flex: 1;
+  
+}
+
+
+
+
+
+
+
+
