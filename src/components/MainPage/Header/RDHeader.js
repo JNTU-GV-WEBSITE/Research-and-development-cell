@@ -1,31 +1,37 @@
-import "./Dropdown.css";
+ 
+import myImage from "./jntugvcev.jpg";
+import ss from "./JntuGvUnit/SS.png";
+import "./RDHeader.css";
 import { Link, useNavigate } from "react-router-dom";
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import DescriptionIcon from "@mui/icons-material/Description";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import GroupsIcon from "@mui/icons-material/Groups";
 import SchoolIcon from "@mui/icons-material/School";
 import PersonIcon from "@mui/icons-material/Person";
 import DraftsIcon from "@mui/icons-material/Drafts";
-// import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
-import ApartmentIcon from "@mui/icons-material/Apartment";
-import DescriptionIcon from "@mui/icons-material/Description";
-import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
-// import { PiExamFill } from "react-icons/pi";
+const RDHeader = () => {
+    const navigate = useNavigate();
 
-const Dropdown = () => {
-  const navigate = useNavigate();
-
-  const [menuState, setMenuState] = useState(false);
-
-  const homeHandler = () => {
-    navigate("/");
-  };
-
-  const contactHandler = () => {
-    navigate("/contact-us");
-  };
+    const [menuState, setMenuState] = useState(false);
+  
+    const homeHandler = () => {
+      navigate("/");
+    };
+    const contactHandler = () => {
+        navigate("/contact-us");
+      };
   return (
-    <nav className="topnav">
+    <div className="nav-bar">
+      <div >
+        <div className="container1" >
+          <img src={myImage} alt="JNTUV_LOGO" className="logo" style={{marginLeft:0,paddingLeft:0,heigth:100,width:80}} />
+          <img src={ss} alt="JNTUV_LOGO1" className="name" style={{width:350,marginLeft:0}}/>
+           
+    <nav className="top-nav">
+      
       <div className="menu-icon" onClick={() => setMenuState(!menuState)}>
         <MenuIcon />
         MENU
@@ -396,8 +402,15 @@ const Dropdown = () => {
           </div>
         </div>
       </div>
-    </nav>
+ </nav>
+ </div>
+ 
+</div>
+      {/*  
+      <div>
+        <Dropdown />
+    </div>*/}
+    </div> 
   );
 };
-
-export default Dropdown;
+export default RDHeader;
