@@ -1,4 +1,4 @@
 const Main = () => {
-  return <h1>welcome to JNTU-GV</h1>;
+  return <h1>welcome to R&D Cell</h1>;
 };
 export default Main;

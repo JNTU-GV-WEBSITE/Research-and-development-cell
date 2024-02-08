@@ -1,14 +1,15 @@
 .image {
   height: 400px;
-  width: 80vw;
+  width: 100vw;
 }
 .mainImageGallery {
   background-color: transparent;
+  padding-bottom: 10px;
 }
 
 .mianDivIG {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 .carouselText {
   background-color: #690001;
@@ -18,9 +19,3 @@
   margin-right: auto;
 }
 
-@media (max-width: 767px) {
-
-  .image{
-    height: 200px;
-  }
-}

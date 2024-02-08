@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
-import Homepage from "./Homepage";
-import Marquee from "./components/Marquee";
-// import BelowBar from "./components/BelowBar/BelowBar";
-
-import Header from "./components/MainPage/Header/Header";
+//import Homepage from "./Homepage";
+// import Marquee from "./components/Marquee";
+// // import BelowBar from "./components/BelowBar/BelowBar";
+// import Header from "./components/MainPage/Header/Header";
 import AboutRandDCell from "./components/MainPage/Header/Aboutus/AboutR&DCell/AboutRandDCell";
 import VisionMission from "./components/MainPage/Header/Aboutus/Vision&Mission/VisionMission";
 import ResearchPolicy from "./components/MainPage/Header/Aboutus/ResearchPolicy/ResearchPolicy";
 
+import RDHomepage from "./RDHomepage";
+import TopBar from "./components/TopBar/TopBar";
+// import AboutJNTUGV from "./components/MainPage/Header/Aboutus/AboutJNTUGV/AboutJNTUGV";
+// import Vision from "./components/MainPage/Header/Aboutus/Vision/Vision";
+// import Mission from "./components/MainPage/Header/Aboutus/Mission/Mission";
 import Chancellor from "./components/MainPage/Header/Administration/Chancellor/Chancellor";
 import ViceChancellor from "./components/MainPage/Header/Administration/ViceChancellor/ViceChancellor";
 import Registrar from "./components/MainPage/Header/Administration/Registrar/Registrar";
@@ -55,16 +59,19 @@ import Chairpersons from "./components/MainPage/Header/Administration/Chairperso
 
 import CompleteGallery from "./components/Gallery/CompleteGallery";
 import Syllabus from "./components/MainPage/Header/Academics/Syllabus/Syllabus";
+import RDHeader from "./components/MainPage/Header/RDHeader";
+
 
 
 function App() {
   return (
     <div>
       {/* <BelowBar /> */}
-      <Marquee />
-      <Header />
+      <TopBar />
+      <RDHeader />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<RDHomepage />} />   
+        
         <Route path="/about-us" element={<AboutusMain />}>
           <Route path="aboutR&DCell" element={<AboutRandDCell />} />
           <Route path="VisionMission" element={<VisionMission />} />
