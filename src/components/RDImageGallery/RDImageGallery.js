@@ -7,7 +7,7 @@ import RD1 from "../../assets/R&D/RD1.png";
 
 const images = [
   RD,
-  RD1
+  RD1,
 ];
 
 function RDImageGallery() {
