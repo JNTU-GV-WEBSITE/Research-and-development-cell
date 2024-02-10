@@ -3,13 +3,10 @@
     margin-top: 5Px;
 }
 
-
-
 .RDimage-Left {
     float: right; 
-    max-width: 350px;
-    height: 280px;
-    
+    max-width: 360px;
+    height: 270px; 
 }
 
 .RDtext-Container {

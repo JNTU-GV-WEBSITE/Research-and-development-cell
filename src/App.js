@@ -8,17 +8,10 @@ import Mission from "./components/MainPage/Header/Aboutus/Mission/Mission";
 import Chancellor from "./components/MainPage/Header/Administration/Chancellor/Chancellor";
 import ViceChancellor from "./components/MainPage/Header/Administration/ViceChancellor/ViceChancellor";
 import Registrar from "./components/MainPage/Header/Administration/Registrar/Registrar";
-import AcademicAudit from "./components/MainPage/Header/Directorates/AcademicAudit/AcademicAudit";
-import AcademicPlanning from "./components/MainPage/Header/Directorates/AcademicPlanning/AcademicPlanning";
-import Admissions from "./components/MainPage/Header/Directorates/Admissions/Admissions";
-import AlumniRelations from "./components/MainPage/Header/Directorates/AlumniRelations/AlumniRelations";
-import Empowerment from "./components/MainPage/Header/Directorates/Empowerment/Empowerment";
-import Evaluation from "./components/MainPage/Header/Directorates/Evaluation/Evaluation";
-import FacultyDevelopmentCell from "./components/MainPage/Header/Directorates/FacultyDevelopmentCell/FacultyDevelopmentCell";
-import IQAC from "./components/MainPage/Header/Directorates/IQAC/IQAC";
-import Placements from "./components/MainPage/Header/Directorates/Placements/Placements";
-import Research from "./components/MainPage/Header/Directorates/Research/Research";
-import SportsAdministration from "./components/MainPage/Header/Directorates/SportsAdministration/SportsAdministration";
+import Director from "./components/MainPage/Header/Administration/Director/Director";
+import BOSList from "./components/MainPage/Header/Administration/BOSList/BOSList";
+import HODList from "./components/MainPage/Header/Administration/HODList/HODList";
+
 import { Route, Routes } from "react-router-dom";
 import AcademicsOP from "./components/MainPage/Header/Academics/Programs Offered/AcademicsOP";
 import ConstituentCollegesOP from "./components/MainPage/Header/Academics/Constituent Colleges/ConstituentCollegesOP";
@@ -31,7 +24,6 @@ import ContactUs from "./components/MainPage/Header/Contact-Us/ContactUs";
 import AboutusMain from "./components/MainPage/Header/Aboutus/AboutusMain";
 import AcademicsMain from "./components/MainPage/Header/Academics/AcademicsMain";
 import AdministrationMain from "./components/MainPage/Header/Administration/AdministrationMain";
-import DirectoratesMain from "./components/MainPage/Header/Directorates/DirectoratesMain";
 import ExaminationMain from "./components/MainPage/Header/Examinations/ExaminationMain";
 import EvaluationExam from "./components/MainPage/Header/Examinations/EvaluationExam";
 import Controller from "./components/MainPage/Header/Examinations/Controller";
@@ -58,7 +50,6 @@ import RDHeader from "./components/MainPage/Header/RDHeader";
 function App() {
   return (
     <div>
-      {/* <BelowBar /> */}
       <TopBar />
       <RDHeader />
       <Routes>
@@ -86,28 +77,13 @@ function App() {
           <Route path="chancellor" element={<Chancellor />} />{" "}
           <Route path="vice-chancellor" element={<ViceChancellor />} />
           <Route path="registrar" element={<Registrar />} />
+          <Route path="Director" element={<Director />} />
+          <Route path="BOSList" element={<BOSList />} />
+          <Route path="HODList" element={<HODList />} />
           <Route path="chairpersons" element={<Chairpersons />} />
 
         </Route>
-        <Route path="/directorates" element={<DirectoratesMain />}>
-          <Route path="academic-audit" element={<AcademicAudit />} />{" "}
-          <Route path="academic-planning" element={<AcademicPlanning />} />
-          <Route path="admissions" element={<Admissions />} />
-          <Route path="alumni-relations" element={<AlumniRelations />} />{" "}
-          <Route path="empowerment" element={<Empowerment />} />
-          <Route path="evaluation" element={<Evaluation />} />
-          <Route
-            path="faculty-development-cell"
-            element={<FacultyDevelopmentCell />}
-          />
-          <Route path="iqac" element={<IQAC />} />
-          <Route path="placements" element={<Placements />} />
-          <Route path="research" element={<Research />} />
-          <Route
-            path="sports-administration"
-            element={<SportsAdministration />}
-          />
-        </Route>
+       
         <Route path="/examination" element={<ExaminationMain />}>
           <Route path="director-evaluation" element={<EvaluationExam />} />
           <Route path="controller" element={<Controller />} />

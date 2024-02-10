@@ -60,7 +60,7 @@ const RDAdministration = () => {
                 <p className="RD-name">Dr. K. Babulu </p>
                 <p className="RD-designation">Director of Research & Development</p> 
                 <button onClick={handleKnowMoreClick} className="more-info">
-                <a href="/directorates/research" className="RDbutton">
+                <a href="/administration/Director" className="RDbutton">
                     <h6>More Info
                 </h6>
                 </a>
