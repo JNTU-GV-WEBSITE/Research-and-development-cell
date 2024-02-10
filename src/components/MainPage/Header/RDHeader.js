@@ -10,7 +10,6 @@ import { useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import GroupsIcon from "@mui/icons-material/Groups";
 import SchoolIcon from "@mui/icons-material/School";
-import PersonIcon from "@mui/icons-material/Person";
 import DraftsIcon from "@mui/icons-material/Drafts";
 const RDHeader = () => {
     const navigate = useNavigate();
@@ -27,8 +26,8 @@ const RDHeader = () => {
     <div className="nav-bar">
       <div >
         <div className="container1" >
-          <img src={myImage} alt="JNTUV_LOGO" className="logo" style={{marginLeft:0,paddingLeft:0,heigth:100,width:80}} />
-          <img src={ss} alt="JNTUV_LOGO1" className="name" style={{width:350,marginLeft:0}}/>
+          <img src={myImage} alt="JNTUV_LOGO" className="logo" style={{marginLeft:0,paddingLeft:0,heigth:110,width:100}} />
+          <img src={ss} alt="JNTUV_LOGO1" className="name" style={{width:500,marginLeft:0}}/>
            
     <nav className="top-nav">
       
@@ -40,13 +39,13 @@ const RDHeader = () => {
         <div class="dropdown">
           <div class="dropbtn" onClick={homeHandler}>
             <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <HomeIcon /> HOME
+              <h6><HomeIcon /> HOME</h6>
             </div>
           </div>
         </div>
         <div class="dropdown">
           <div class="dropbtn">
-            <ApartmentIcon /> ABOUT US
+            <h6><ApartmentIcon /> ABOUT US</h6>
           </div>
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
@@ -71,7 +70,7 @@ const RDHeader = () => {
         </div>
         <div class="dropdown">
           <div class="dropbtn">
-            <GroupsIcon /> ADMINISTRATION
+           <h6> <GroupsIcon /> ADMINISTRATION</h6>
           </div>
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button>
@@ -106,6 +105,37 @@ const RDHeader = () => {
             </button>
             <button>
               {" "}
+              <Link
+                className="link-btn"
+                to="/administration/Director"
+                target="_self"
+              >
+                Director
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link
+                className="link-btn"
+                to="/administration/BOSList"
+                target="_self"
+              >
+                List of BOS's
+              </Link>
+            </button>
+           
+            <button>
+              {" "}
+              <Link
+                className="link-btn"
+                to="/administration/HODList"
+                target="_self"
+              >
+                List of HOD's
+              </Link>
+            </button>
+            <button>
+              {" "}
               {/* <Link
                 className="link-btn"
                 to="/administration/chairpersons"
@@ -118,7 +148,7 @@ const RDHeader = () => {
         </div>
         <div class="dropdown">
           <div class="dropbtn">
-            <SchoolIcon /> ACADEMICS
+            <h6><SchoolIcon /> ACADEMICS</h6>
           </div>
           <div
             class="dropdown-content"
@@ -174,132 +204,9 @@ const RDHeader = () => {
             </button>
           </div>
         </div>
-
         <div class="dropdown">
           <div class="dropbtn">
-            <PersonIcon />
-            DIRECTORATES
-          </div>
-          <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/academic-planning"
-                target="_self"
-              >
-                Academic Planning
-              </Link>
-            </button>
-
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/academic-audit"
-                target="_self"
-              >
-                Academic Audit
-              </Link>
-            </button>
-
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/evaluation"
-                target="_self"
-              >
-                Evaluation
-              </Link>
-            </button>
-
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/admissions"
-                target="_self"
-              >
-                Admissions
-              </Link>
-            </button>
-
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/placements"
-                target="_self"
-              >
-                IIIT & Placements
-              </Link>
-            </button>
-
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/research"
-                target="_self"
-              >
-                Research & Development
-              </Link>
-            </button>
-            {/* 
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/faculty-development-cell"
-                target="_self"
-              >
-                Faculty Development Cell
-              </Link>
-            </button> */}
-
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/alumni-relations"
-                target="_self"
-              >
-                Alumni Relations
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/directorates/iqac" target="_self">
-                Internal Quality Assurance Cell
-              </Link>
-            </button>
-
-            {/* <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/empowerment"
-                target="_self"
-              >
-                Empowerment of Women & Grievances
-              </Link>
-            </button>    
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="/directorates/sports-administration"
-                target="_self"
-              >
-                University Games & Sports Administration
-              </Link>
-            </button> */}
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropbtn">
-            <DescriptionIcon /> EXAMINATIONS
+           <h6> <DescriptionIcon /> EXAMINATIONS</h6>
           </div>
           <div
             class="dropdown-content"
@@ -397,7 +304,7 @@ const RDHeader = () => {
         <div class="dropdown">
           <div className="dropbtn" onClick={contactHandler}>
             <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <DraftsIcon /> CONTACT US
+            <h6> <DraftsIcon /> CONTACT US</h6>
             </div>
           </div>
         </div>
