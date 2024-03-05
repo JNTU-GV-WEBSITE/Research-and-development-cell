@@ -8,28 +8,28 @@ const AboutusMain = () => {
       <div className="ABOUTallLeftMenu">
          {/* Navigation links for Chancellor, Vice Chancellor, and Registrar */}
          <Link
-          to="about-jntugv"
+          to="aboutRND"
           className={`menuButton ${
-            location.pathname === "/about-us/about-jntugv" ? "active" : ""
+            location.pathname === "/about-us/aboutRND" ? "active" : ""
           }`}
         >
-          About JNTUGV
+          About R&D Cell
         </Link>
         <Link
-          to="vision"
+          to="VisionMission"
           className={`menuButton ${
-            location.pathname === "/about-us/vision" ? "active" : ""
+            location.pathname === "/about-us/VisionMission" ? "active" : ""
           }`}
         >
-          Vision
+          Vision & Mission
         </Link>
         <Link
-          to="mission"
+          to="Researchpolicy"
           className={`menuButton ${
-            location.pathname === "/about-us/mission" ? "active" : ""
+            location.pathname === "/about-us/Researchpolicy" ? "active" : ""
           }`}
         >
-          Mission
+          Research Policy
         </Link>
       </div>
       <Outlet />
