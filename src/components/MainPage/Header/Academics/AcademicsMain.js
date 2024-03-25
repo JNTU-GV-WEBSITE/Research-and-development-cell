@@ -7,7 +7,7 @@ const AcademicsMain = () => {
   return (
     <div className="Academicmain-Main">
       <div className="allLeftMenuAOP">
-        <Link
+        {/* <Link
           to="programs-offered"
           className={`menubutton ${
             location.pathname === "/academics/programs-offered" ? "active" : ""
@@ -46,7 +46,7 @@ const AcademicsMain = () => {
           }`}
         >
           BOS Chairman
-        </Link>
+        </Link> */}
         <Link
           to="calender"
           className={`menubutton ${

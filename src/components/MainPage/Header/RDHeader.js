@@ -1,10 +1,8 @@
- 
-import myImage from "./jntugvcev.jpg";
+ import myImage from "./jntugvcev.jpg";
 import ss from "./JntuGvUnit/SS.png";
 import "./RDHeader.css";
 import { Link, useNavigate } from "react-router-dom";
 import ApartmentIcon from "@mui/icons-material/Apartment";
-import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
@@ -50,20 +48,20 @@ const RDHeader = () => {
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
               {" "}
-              <Link className="link-btn" to="/about-us/about-jntugv">
-                About JNTU-GV
+              <Link className="link-btn" to="/about-us/aboutRND">
+                About R&D Cell
               </Link>
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/about-us/vision">
-                Vision
+              <Link className="link-btn" to="/about-us/VisionMission">
+                Vision & Mission
               </Link>
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/about-us/mission">
-                Mission
+              <Link className="link-btn" to="/about-us/Researchpolicy">
+                Research Policy
               </Link>
             </button>
           </div>
@@ -123,7 +121,6 @@ const RDHeader = () => {
                 List of BOS's
               </Link>
             </button>
-           
             <button>
               {" "}
               <Link
@@ -133,16 +130,6 @@ const RDHeader = () => {
               >
                 List of HOD's
               </Link>
-            </button>
-            <button>
-              {" "}
-              {/* <Link
-                className="link-btn"
-                to="/administration/chairpersons"
-                target="_self"
-              >
-                Chairpersons
-              </Link> */}
             </button>
           </div>
         </div>
@@ -154,40 +141,6 @@ const RDHeader = () => {
             class="dropdown-content"
             onClick={() => setMenuState(!menuState)}
           >
-            <button>
-              {" "}
-              <Link className="link-btn" to="/academics/programs-offered">
-                Programs offered
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/academics/admissions">
-                {" "}
-                Admissions
-              </Link>
-            </button>
-
-            <button>
-              {" "}
-              <Link className="link-btn" to="/academics/constituent-colleges">
-                Constituent Colleges
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/academics/affliated-colleges">
-                {" "}
-                Affiliated Colleges
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/academics/bos-chairman">
-                {" "}
-                BOS Chairman
-              </Link>
-            </button>
             <button>
               {" "}
               <Link className="link-btn" to="/academics/calender">
@@ -204,120 +157,26 @@ const RDHeader = () => {
             </button>
           </div>
         </div>
-        <div class="dropdown">
-          <div class="dropbtn">
-           <h6> <DescriptionIcon /> EXAMINATIONS</h6>
-          </div>
-          <div
-            class="dropdown-content"
-            onClick={() => setMenuState(!menuState)}
-          >
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/director-evaluation">
-                Director of Evaluation
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/controller">
-                Controller of Examinations
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/controller-sdc">
-                Additional Controller of Examinations-SDC
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/controller1">
-                Additional Controller of Examinations-1
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/controller2">
-                Additional Controller of Examinations-2
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/controller3">
-                Additional Controller of Examinations-3
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/examination/controller-pg">
-                Additional Controller of Examinations-PG
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link
-                className="link-btn"
-                to="https://results.jntugv.edu.in"
-                target="_blank"
-              >
-                Examination Results
-              </Link>
-            </button>
+        {/* <div class="dropdown">
+        <div className="dropbtn" onClick={contactHandler}>
+          <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
+            <h6> NOTIFICATIONS</h6>
           </div>
         </div>
-        {/* 
-        <div class="dropdown">
-          <div class="dropbtn">
-            <div className="drop-icon">
-              <PiExamFill className="result-icon" />
-              RESULTS
-            </div>
-          </div>
-          <div class="dropdown-content">
-            <button>
-              {" "}
-              <Link className="link-btn" to="/results/r13">
-                R13
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/results/r16">
-                R16{" "}
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/results/r19">
-                R19{" "}
-              </Link>
-            </button>
-            <button>
-              {" "}
-              <Link className="link-btn" to="/results/r20">
-                R20{" "}
-              </Link>
-            </button>
-          </div>
-        </div> */}
-        <div class="dropdown">
-          <div className="dropbtn" onClick={contactHandler}>
-            <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
+      </div> */}
+      <div class="dropdown">
+        <div className="dropbtn" onClick={contactHandler}>
+          <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
             <h6> <DraftsIcon /> CONTACT US</h6>
-            </div>
           </div>
         </div>
       </div>
- </nav>
- </div>
- 
-</div>
-      {/*  
-      <div>
-        <Dropdown />
-    </div>*/}
-    </div> 
-  );
+      
+      </div>
+    </nav>
+    </div>
+    </div>
+  </div> 
+        );
 };
 export default RDHeader;

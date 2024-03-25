@@ -31,7 +31,7 @@ const AboutRandD = () => {
               </h5>
               <br />
               <button onClick={handleKnowMoreClick} className="RD-button1">
-                <a href="/about-us/about-jntugv" className="RD-button">
+                <a href="/about-us/aboutRND" className="RD-button">
                     <h6>Know More
                 </h6>
                 </a>
