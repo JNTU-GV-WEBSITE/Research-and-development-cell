@@ -67,7 +67,21 @@ const RDAdministration = () => {
                 </button>
                 </div>
                 </div>
+                <div className="RD-coordinator">
+                <img src="https://jntugvcev.edu.in/wp-content/uploads/2020/08/9-M-HEMA-JNTUK-UCEV.jpg" alt="Image2" className="RD-img"  /> 
+                <div className="RD-data">
+                <p className="RD-name">Dr. M. Hema </p>
+                <p className="RD-designation">Co-ordinator of Research & Development</p> 
+                <button onClick={handleKnowMoreClick} className="more-info">
+                <a href="/administration/coordinator" className="RDbutton">
+                    <h6>More Info
+                </h6>
+                </a>
+                </button>
                 </div>
+                </div>
+                </div>
+                
                 </div>
                 </div>
     );

@@ -43,7 +43,7 @@
     font-size: small;
 }
 
-.RD-Chancellor, .RD-ViceChancellor, .RD-Registrar, .RD-Director {
+.RD-Chancellor, .RD-ViceChancellor, .RD-Registrar, .RD-Director, .RD-coordinator {
     background-color: aliceblue;
     width: 20%;
     height: 50%;

@@ -40,6 +40,14 @@ const AdministrationMain = () => {
           Director
         </Link>
         <Link
+          to="coordinator"
+          className={`menuButton ${
+            location.pathname === "/administration/coordinator" ? "active" : ""
+          }`}
+        >
+          Co-ordinator
+        </Link>
+        <Link
           to="BOSList"
           className={`menuButton ${
             location.pathname === "/administration/BOSList" ? "active" : ""
