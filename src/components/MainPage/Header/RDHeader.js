@@ -115,6 +115,16 @@ const RDHeader = () => {
               {" "}
               <Link
                 className="link-btn"
+                to="/administration/coordinator"
+                target="_self"
+              >
+                Co-ordinator
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link
+                className="link-btn"
                 to="/administration/BOSList"
                 target="_self"
               >
@@ -135,7 +145,7 @@ const RDHeader = () => {
         </div>
         <div class="dropdown">
           <div class="dropbtn">
-            <h6><SchoolIcon /> ACADEMICS</h6>
+            <h6><SchoolIcon /> PROGRAMS</h6>
           </div>
           <div
             class="dropdown-content"
@@ -143,16 +153,35 @@ const RDHeader = () => {
           >
             <button>
               {" "}
-              <Link className="link-btn" to="/academics/calender">
+              <Link className="link-btn" to="/programs/programs-offered">
                 {" "}
-                Academic Calender
+                Programs Offered (Ph.D)
+              </Link>
+            </button>
+            
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropbtn">
+            <h6><SchoolIcon /> ACADEMICS</h6>
+          </div>
+          <div
+            class="dropdown-content"
+            onClick={() => setMenuState(!menuState)}
+          >
+
+            <button>
+              {" "}
+              <Link className="link-btn" to="/academics/academic-regulations">
+                {" "}
+                Academic Regulations
               </Link>
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/academics/academic-syllabus">
+              <Link className="link-btn" to="/academics/codeofconduct">
                 {" "}
-                Academic Syllabus
+                Code of Conduct
               </Link>
             </button>
           </div>

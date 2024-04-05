@@ -15,26 +15,21 @@ export const Administration_Wing = [
 
 export const Central_Facilites = [
   {
-    title: "Home",
-    link: "/",
-  },
-
-  {
     title: "About Us",
-    link: "/",
+    link: "/about-us/aboutRND",
   },
 
   {
     title: "Administration",
-    link: "/",
+    link: "/administration/chancellor",
   },
   {
-    title: "Ph.D List",
-    link: "/",
+    title: "Programs Offered",
+    link: "/programs/programs-offered",
   },
   {
-    title: "Contact",
-    link: "/",
+    title: "Academics",
+    link: "/academics/codeofconduct",
   },
 ];
 

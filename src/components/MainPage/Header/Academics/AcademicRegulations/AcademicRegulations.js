@@ -13,7 +13,7 @@ import {
     Tab,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import "./Syllabus.css";
+import "./AcademicRegulations.css";
 
 const data = {
     year: {
@@ -29,7 +29,7 @@ const data = {
     },
 };
 
-const Syllabus = () => {
+const AcademicRegulations = () => {
     const availableYears = Object.keys(data.year);
     const [selectedTab, setSelectedTab] = useState(availableYears[0] || ''); // Set the first available year as the default
 
@@ -83,7 +83,7 @@ const Syllabus = () => {
 
     return (
         <div className="syllabus">
-            <div className="syllabus-title">Academic Syllabus</div>
+            <div className="syllabus-title">Academic Regulations</div>
 
             {availableYears.length > 1 && (
                 <Tabs
@@ -104,4 +104,4 @@ const Syllabus = () => {
     );
 };
 
-export default Syllabus;
+export default AcademicRegulations;

@@ -7,61 +7,21 @@ const AcademicsMain = () => {
   return (
     <div className="Academicmain-Main">
       <div className="allLeftMenuAOP">
-        {/* <Link
-          to="programs-offered"
+        <Link
+          to="academic-regulations"
           className={`menubutton ${
-            location.pathname === "/academics/programs-offered" ? "active" : ""
+            location.pathname === "/academics/academic-regulations" ? "active" : ""
           }`}
         >
-          Programs Offered
+          Academic Regulations
         </Link>
         <Link
-          to="admissions"
+          to="codeofconduct"
           className={`menubutton ${
-            location.pathname === "/academics/admissions" ? "active" : ""
+            location.pathname === "/academics/codeofconduct" ? "active" : ""
           }`}
         >
-          Admissions
-        </Link>
-        <Link
-          to="constituent-colleges"
-          className={`menubutton ${
-            location.pathname === "/academics/constituent-colleges" ? "active" : ""
-          }`}
-        >
-          Constituent Colleges
-        </Link>
-        <Link
-          to="affliated-colleges"
-          className={`menubutton ${
-            location.pathname === "/academics/affliated-colleges" ? "active" : ""
-          }`}
-        >
-          Affiliated Colleges
-        </Link>
-        <Link
-          to="bos-chairman"
-          className={`menubutton ${
-            location.pathname === "/academics/bos-chairman" ? "active" : ""
-          }`}
-        >
-          BOS Chairman
-        </Link> */}
-        <Link
-          to="calender"
-          className={`menubutton ${
-            location.pathname === "/academics/calender" ? "active" : ""
-          }`}
-        >
-        Academic Calender
-        </Link>
-        <Link
-          to="academic-syllabus"
-          className={`menubutton ${
-            location.pathname === "/academics/academic-syllabus" ? "active" : ""
-          }`}
-        >
-          Academic Syllabus
+          Code of Conduct
         </Link>
       </div>
       <Outlet />

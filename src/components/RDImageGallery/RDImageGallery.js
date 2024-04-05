@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./RDImageGallery.css";
 import RD from "../../assets/R&D/RD.png";
 import RD1 from "../../assets/R&D/RD1.png";
+//import RD2 from "../../assets/R&D/RD2.png";
 
 const images = [
   RD,
