@@ -9,6 +9,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import GroupsIcon from "@mui/icons-material/Groups";
 import SchoolIcon from "@mui/icons-material/School";
 import DraftsIcon from "@mui/icons-material/Drafts";
+import PhoneIcon from "@mui/icons-material/Phone";
+
 const RDHeader = () => {
     const navigate = useNavigate();
 
@@ -20,12 +22,15 @@ const RDHeader = () => {
     const contactHandler = () => {
         navigate("/contact-us");
       };
+      const notificationHandler = () => {
+        navigate("/notifications");
+      };
   return (
     <div className="nav-bar">
       <div >
         <div className="container1" >
-          <img src={myImage} alt="JNTUV_LOGO" className="logo" style={{marginLeft:0,paddingLeft:0,heigth:110,width:100}} />
-          <img src={ss} alt="JNTUV_LOGO1" className="name" style={{width:500,marginLeft:0}}/>
+          <img src={myImage} alt="JNTUV_LOGO" className="logo" style={{marginLeft:0,paddingLeft:0,heigth:100,width:70}} />
+          <img src={ss} alt="JNTUV_LOGO1" className="name" style={{width:400,marginLeft:0}}/>
            
     <nav className="top-nav">
       
@@ -186,26 +191,26 @@ const RDHeader = () => {
             </button>
           </div>
         </div>
-        {/* <div class="dropdown">
-        <div className="dropbtn" onClick={contactHandler}>
+        <div class="dropdown">
+        <div className="dropbtn" onClick={notificationHandler}>
           <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-            <h6> NOTIFICATIONS</h6>
+            <h6> <DraftsIcon /> NOTIFICATIONS</h6>
           </div>
         </div>
-      </div> */}
+      </div>
       <div class="dropdown">
         <div className="dropbtn" onClick={contactHandler}>
           <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-            <h6> <DraftsIcon /> CONTACT US</h6>
+            <h6> <PhoneIcon /> CONTACT US</h6>
           </div>
         </div>
       </div>
       
-      </div>
+    </div>
     </nav>
     </div>
     </div>
-  </div> 
+  </div>
         );
 };
 export default RDHeader;

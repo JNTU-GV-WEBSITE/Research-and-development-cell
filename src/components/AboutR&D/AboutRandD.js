@@ -1,6 +1,7 @@
 import React from "react";
 import './AboutRandD.css';
 import { useState } from 'react';
+import Jntu from "./Jntu.jpg";
 
 const AboutRandD = () => {
   const [showAboutUs, setShowAboutUs] = useState(false);
@@ -14,7 +15,7 @@ const AboutRandD = () => {
             <div className="RDtext-content">
           <div className="RD-imageContainer">
             <img
-              src="https://tse4.mm.bing.net/th?id=OIP.dDIMxEvxbrLRaygJDaEsTwHaEc&pid=Api&P=0&h=180"
+              src={Jntu}
               alt="JNTUGV Logo"
               className="RDimage-Left" />
           </div>

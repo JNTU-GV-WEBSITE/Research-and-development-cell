@@ -11,7 +11,7 @@ import Registrar from "./components/MainPage/Header/Administration/Registrar/Reg
 import Director from "./components/MainPage/Header/Administration/Director/Director";
 import BOSList from "./components/MainPage/Header/Administration/BOSList/BOSList";
 import HODList from "./components/MainPage/Header/Administration/HODList/HODList";
-
+import Notifications from "./components/MainPage/Header/Notifications/Notifications";
 import { Route, Routes } from "react-router-dom";
 import ContactUs from "./components/MainPage/Header/Contact-Us/ContactUs";
 import AboutusMain from "./components/MainPage/Header/Aboutus/AboutusMain";
@@ -26,9 +26,6 @@ import CompleteGallery from "./components/Gallery/CompleteGallery";
 import AcademicRegulations from "./components/MainPage/Header/Academics/AcademicRegulations/AcademicRegulations";
 import RDHeader from "./components/MainPage/Header/RDHeader";
 import Coordinator from "./components/MainPage/Header/Administration/Coordinator/Coordinator";
-
-
-
 
 function App() {
   return (
@@ -62,6 +59,8 @@ function App() {
           <Route path="programs-offered" element={<Programsoffered />} />
           
         </Route>
+        <Route path="/notifications" element={<Notifications />} />
+
           <Route path="/contact-us" element={<ContactUs />} />
 
         <Route path="/grievance-form" element={<Grievance />} />
