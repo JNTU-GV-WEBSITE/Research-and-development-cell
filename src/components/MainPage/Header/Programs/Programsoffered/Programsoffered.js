@@ -10,13 +10,13 @@ function Programsoffered() {
           <br />
           <br />
           </h4>
-          <li>Computer Science & Engineering</li>
-          <li>Electronics & Communication Engineering</li>
-          <li>Information Technology</li><li>Mechanical Engineering</li>
           <li>Civil Engineering</li>
-          <li>Metallurgical Engineering</li>
           <li>Electrical & Electronic Engineering</li>
-          
+          <li>Mechanical Engineering</li>
+          <li>Electronics & Communication Engineering</li>
+          <li>Computer Science & Engineering</li>
+          <li>Information Technology</li>
+          <li>Metallurgical Engineering</li>
           <br />
           <br />
           <h4 style={{ fontWeight: "bold" }}>

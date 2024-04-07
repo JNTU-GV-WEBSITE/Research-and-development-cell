@@ -3,12 +3,9 @@ export const Administration_Wing = [
     title: "JNTU-GV, DWARAPUDI, VIZIANAGARAM, Andhra Pradesh, INDIA,  535 003 " ,
     
   },
-   {
-    title: "Phone : 08922277388 " ,
-    
-  },
+   
   {
-    title: "Email : drnd@jntuk.edu.in" ,
+    title: "Email : dr@jntugv.edu.in" ,
     
   },
 ];
@@ -37,31 +34,24 @@ export const Central_Facilites = [
 export const Constituent_Colleges = [
   {
     title: "Notifications",
-    link: "/",
+    link: "/notifications",
   },
+ 
   {
-    title: "Online Payments",
-    link: "/",
+    title: "Contact",
+    link: "/contact-us",
   },
 
-  {
-    title: "University",
-    link: "/",
-  },
-  {
-    title: "Others",
-    link: "/",
-  },
 ];
 
 
 
-export const JntuGv_Units = [
-  {
-    title: "Tamen quem nulla quae legam multos aute sint culpa legam noster magna",
-    link: "/",
-  },
+// export const JntuGv_Units = [
+//   {
+//     title: "Tamen quem nulla quae legam multos aute sint culpa legam noster magna",
+//     link: "/",
+//   },
   
   
-]
+// ]
 

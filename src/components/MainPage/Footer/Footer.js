@@ -4,7 +4,6 @@ import {
   Administration_Wing,
   Central_Facilites,
   Constituent_Colleges,
-  JntuGv_Units,
 } from "./FooterData.js";
 import {
   FaFacebook,
@@ -89,11 +88,11 @@ function Footer() {
           </div>
         </div>
 
-        <div className="container4Footer">
+        {/* <div className="container4Footer"> */}
           {/* JNTU GV UNITS */}
-          <p className="subheadingFooter">Our Newsletter</p>
-          <hr className="subFooter" />
-          <div>
+          {/* <p className="subheadingFooter">Our Newsletter</p>
+          <hr className="subFooter" /> */}
+          {/* <div>
             {JntuGv_Units.map((item, index) => (
               <div key={index}>
                 <p>
@@ -107,7 +106,7 @@ function Footer() {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
           {/* <p className="subheadingFooter">Grievances</p>
           <hr className="subFooter" />
           <div>
@@ -121,7 +120,7 @@ function Footer() {
               </div>
             ))}
           </div> */}
-        </div>
+        {/* </div> */}
       </div>
       <hr className="footerHr" />
       <div className="subcontainer3Footer">
